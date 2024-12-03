@@ -247,17 +247,22 @@ Case Study Card
 
 .case-studies {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    gap: 32px;
 }
 
 .case-study--card {
-    background-color: #FBECEF;
+    background-color: #FFFFFF;
+    background-image: url(../images/grid-basic.svg);
     border-radius: 6px;
     height: auto;
     width: 48%;
     margin-bottom: 32px;
     overflow: hidden;
+    1 1 calc(33.333% - 32px); /* Adjust based on desired column count */
+    align-self: stretch; /* Ensures each card stretches to the same height */
 }
 
 .case-study--card-image {
@@ -267,8 +272,7 @@ Case Study Card
 }
 
 .case-study--card-content {
-    padding: 16px;
-    background-color: #F5EAD8;
+    padding: 24px;
 }
 
 .case-study--content a:hover {
