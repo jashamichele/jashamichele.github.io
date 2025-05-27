@@ -57,7 +57,7 @@ h6  {
 }
 
 li, p {
-    font-size: 1.4em;    
+    font-size: 1.4rem;    
     line-height: 1.4;
     color: inherit;
     font-weight: 500;
@@ -97,10 +97,6 @@ body {
     100% {
       background: #FFCBB9;
     }
-}
-
-.about-nav {
-    /*color: white;*/
 }
 
 hr {
@@ -261,7 +257,7 @@ Case Study Card
     width: 48%;
     margin-bottom: 32px;
     overflow: hidden;
-    1 1 calc(33.333% - 32px); /* Adjust based on desired column count */
+    flex: 1 1 calc(33.333% - 32px); /* Adjust based on desired column count */
     align-self: stretch; /* Ensures each card stretches to the same height */
 }
 
@@ -390,9 +386,6 @@ Case Study Card
      .case-study--skills {
          margin: 0px 24px 0px 0px;
      }
-     .case-study--card-subtitle {
-        /*height: 56px;*/
-    }
 }
 
 /*Case Study Pages*/
@@ -441,7 +434,7 @@ Case Study Card
 }
 
 .case-study--image-and-caption {
-    align: center;
+    /*align: center;*/
     display: block;
     text-align: center;
     margin: 48px 48px;
